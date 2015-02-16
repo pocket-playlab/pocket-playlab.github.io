@@ -6,6 +6,7 @@ description: >
   the best games for iOS and Android devices along with Facebook.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pocket-playlab.github.io" # the base hostname & protocol for your site
+facebook_username: PlaylabGames
 twitter_username: PlaylabGames
 github_username:  pocket-playlab
 
