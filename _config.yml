@@ -1,14 +1,13 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: PlayLab tech blog
+description: >
+  Playlab is a leading game developer & publisher that has grown from a handful
+  of passionate gamers to a group of 80 and more enthusiasts striving to create
+  the best games for iOS and Android devices along with Facebook.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://pocket-playlab.github.io" # the base hostname & protocol for your site
+twitter_username: PlaylabGames
+github_username:  pocket-playlab
 
 # Build settings
 markdown: kramdown
