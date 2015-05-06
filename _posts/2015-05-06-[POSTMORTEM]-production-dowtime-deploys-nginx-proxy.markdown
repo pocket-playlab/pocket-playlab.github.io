@@ -31,7 +31,7 @@ that block :
 `upstream` requiring one argument, the reloading of the configuration was 
 failing, and thus all services running on that server were unreachable. We are 
 using a [fork][2] of [jwilder/nginx-proxy][3], so if you don't set your 
-VIRTUAL_ENV variable for one of your containers exposing a port, you might run 
+`VIRTUAL_ENV` variable for one of your containers exposing a port, you might run 
 into the same issue. Just set a dummy variable if need be.
 
 ### How to avoid that situation : 
