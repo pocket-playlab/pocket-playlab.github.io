@@ -29,7 +29,10 @@ that block :
     }
 
 `upstream` requiring one argument, the reloading of the configuration was 
-failing, and thus all services running on that server were unreachable.
+failing, and thus all services running on that server were unreachable. We are 
+using a fork of jwilder/nginx-proxy, so if you don't set your VIRTUAL_ENV 
+variable for one of your containers exposing a port, you might run into the same
+ issue. Just set a dummy variable if need be.
 
 ### How to avoid that situation : 
 +  Always set required environment variables before running a container
