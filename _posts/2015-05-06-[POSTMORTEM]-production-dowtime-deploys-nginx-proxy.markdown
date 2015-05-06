@@ -11,8 +11,8 @@ If you're not doing post-mortems yet, you should. Here is a [good article][1]
 explaining why and how to do them.
 
 ### Description of the issue : 
-Storage service and backends for all games were
-unreachable for between 5 and 30 minutes
+The storage service and backends for all games were unreachable for between 5 
+and 30 minutes
 
 ### Effect for the user : 
 All transactions with the backend were unable to be 
