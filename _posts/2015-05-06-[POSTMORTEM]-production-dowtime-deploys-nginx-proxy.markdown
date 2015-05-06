@@ -19,7 +19,7 @@ All transactions with the backend were unable to be
 processed (in-app purchases, loading and saving data...)
 
 ### Solution found : 
-A environment variable was missing for one of our unused 
+An environment variable was missing for one of our unused 
 backend. This variable is used to dynamically reconfigure our nginx-proxy 
 container, running on all servers. Its absence was leading to our config having 
 that block : 
@@ -30,9 +30,9 @@ that block :
 
 `upstream` requiring one argument, the reloading of the configuration was 
 failing, and thus all services running on that server were unreachable. We are 
-using a fork of jwilder/nginx-proxy, so if you don't set your VIRTUAL_ENV 
-variable for one of your containers exposing a port, you might run into the same
- issue. Just set a dummy variable if need be.
+using a [fork][2] of [jwilder/nginx-proxy][3], so if you don't set your 
+VIRTUAL_ENV variable for one of your containers exposing a port, you might run 
+into the same issue. Just set a dummy variable if need be.
 
 ### How to avoid that situation : 
 +  Always set required environment variables before running a container
@@ -40,3 +40,5 @@ variable for one of your containers exposing a port, you might run into the same
 +  Return errors during the deployment process and notify the team in chat
 
 [1]: https://codeascraft.com/2012/05/22/blameless-postmortems/
+[2]: https://registry.hub.docker.com/u/pocketplaylab/nginx-proxy/
+[3]: https://registry.hub.docker.com/u/jwilder/nginx-proxy/
