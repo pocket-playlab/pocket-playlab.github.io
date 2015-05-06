@@ -10,15 +10,15 @@ from fixing downtimes and incidents will help others in turn.
 If you're not doing post-mortems yet, you should. Here is a [good article][1] 
 explaining why and how to do them.
 
-### Description of the issue : 
+### Description of the issue: 
 The storage service and backends for all games were unreachable for between 5 
 and 30 minutes
 
-### Effect for the user : 
+### Effect for the user: 
 All transactions with the backend were unable to be 
 processed (in-app purchases, loading and saving data...)
 
-### Solution found : 
+### Solution found: 
 An environment variable was missing for one of our unused 
 backend. This variable is used to dynamically reconfigure our nginx-proxy 
 container, running on all servers. Its absence was leading to our config having 
@@ -34,7 +34,7 @@ using a [fork][2] of [jwilder/nginx-proxy][3], so if you don't set your
 `VIRTUAL_ENV` variable for one of your containers exposing a port, you might run 
 into the same issue. Just set a dummy variable if need be.
 
-### How to avoid that situation : 
+### How to avoid that situation: 
 +  Always set required environment variables before running a container
 +  Make the container fail if the required environment variables are missing
 +  Return errors during the deployment process and notify the team in chat
