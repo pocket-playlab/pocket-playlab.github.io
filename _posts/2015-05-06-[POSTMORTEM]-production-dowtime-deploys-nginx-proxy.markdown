@@ -5,7 +5,7 @@ author: Charles Martinot
 date:   2015-05-06 16:52:00
 ---
 From now on, we will publish our post-mortems here. We hope that what we learn 
-from fixing downtimes and incidents will help other in turn.
+from fixing downtimes and incidents will help others in turn.
 
 If you're not doing post-mortems yet, you should. Here is a [good article][1] 
 explaining why and how to do them.
