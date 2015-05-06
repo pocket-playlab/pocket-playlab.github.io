@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  POST-MORTEM Production services downtime after a deployement
+title:  POST-MORTEM Production services downtime after a deployment
 author: Charles Martinot
 date:   2015-05-06 16:52:00
 ---
