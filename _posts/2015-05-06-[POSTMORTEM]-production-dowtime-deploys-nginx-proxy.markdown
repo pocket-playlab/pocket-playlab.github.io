@@ -22,7 +22,7 @@ processed (in-app purchases, loading and saving data...)
 An environment variable was missing for one of our unused 
 backend. This variable is used to dynamically reconfigure our nginx-proxy 
 container, running on all servers. Its absence was leading to our config having 
-that block : 
+that block: 
 
     upstream  {
        server XXX.XXX.XXX.XXX:XXXX;
